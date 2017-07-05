@@ -1,0 +1,20 @@
+<header class=michael-header>
+<div class=michael-header-container>
+      <div class=michael-header-logo>
+         <a href="/"><h1>MSS</h1></a>
+      </div>
+   <div class=michael-header-name>
+      <h1>Michael Sejr Schlichtkrull</h1>
+   </div>
+   <nav class=michael-header-navigation>
+      <ul class=michael-header-navigation-list>
+      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for navigation_page in navigation_pages %}
+         <li class="michael-header-navigation-item{% if navigation_page.title == page.title %} michael-header-navigation-item-selected{% endif %}">
+         <a href={{navigation_page.url}}>{{navigation_page.title}}</a>
+         </li>
+      {% endfor %}
+      </ul>
+   </nav>
+</div>
+</header>

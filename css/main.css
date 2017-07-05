@@ -1,0 +1,77 @@
+/*
+ General styling:
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+ Styling for header:
+*/
+
+.michael-header-logo{
+	display: inline-block;
+	background-color: black;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 100px;
+	height: 100px;
+}
+
+.michael-header-logo a{
+	text-decoration: none;
+}
+
+.michael-header-logo h1{
+	color: white;
+	font-size: 34px;
+}
+
+.michael-header-name{
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	font-size: 16px;
+}
+
+.michael-header-navigation{
+	float: right;
+	width: auto;
+	height: auto !important;
+	padding-right: 4%;
+}
+
+.michael-header-navigation ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.michael-header-navigation li {
+	display: inline-block;
+}
+
+
+.michael-header-logo h1, .michael-header-name h1, .michael-header-navigation a{	
+	line-height: 90px;
+	margin: 0px;
+	padding: 5px;
+	font-family: Raleway;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+.michael-header-navigation a{
+	text-decoration: none;
+	color: #A9A9A9;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.michael-header-navigation-item-selected a{
+	color: black;
+}

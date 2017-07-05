@@ -1,0 +1,16 @@
+[
+	{
+		"title" : "Modeling Relational Data with Graph Convolutional Networks",
+		"authors": ["Michael Sejr Schlichtkrull", "Thomas N. Kipf", "Peter Bloem", "Rianne van den Berg", "Ivan Titov", "Max Welling"],
+		"abstract" : "Knowledge bases play a crucial role in many applications, for example question answering and information retrieval. Despite the great effort invested in creating and maintaining them, even the largest representatives (e.g., Yago, DBPedia or Wikidata) are highly incomplete. We introduce relational graph convolutional networks (R-GCNs) and apply them to two standard knowledge base completion tasks: link prediction (recovery of missing facts, i.e.~subject-predicate-object triples) and entity classification (recovery of missing attributes of entities). R-GCNs are a generalization of graph convolutional networks, a recent class of neural networks operating on graphs, and are developed specifically to deal with highly multi-relational data, characteristic of realistic knowledge bases. Our methods achieve competitive performance on standard benchmarks for both tasks, demonstrating especially promising results on the challenging FB15k-237 subset of Freebase.",
+		"link": "https://arxiv.org/abs/1703.06103",
+		"pdf": "https://arxiv.org/pdf/1703.06103.pdf",
+		"venue": "ArXiv",
+		"year": 2017,
+		"bib": 	{
+			"venue" : "arXiv preprint arXiv:1703.06103",
+			"id" : "schlichtkrull2017modeling",
+			"type": "article"
+			}
+	}
+]
