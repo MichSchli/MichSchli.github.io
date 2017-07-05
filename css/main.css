@@ -5,11 +5,27 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	background-image: url("/images/background.jpg");
+	background-attachment: fixed;
+}
+
+.michael-content-box{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 10%;
+	background-color: white;
+	display: inline-block;
+	padding: 50px;
 }
 
 /*
  Styling for header:
 */
+
+.michael-header {
+	position: fixed;
+    	width: 100%;
+}
 
 .michael-header-logo{
 	display: inline-block;
@@ -75,3 +91,10 @@ body {
 .michael-header-navigation-item-selected a{
 	color: black;
 }
+
+.michael-header-container{
+	background: white;
+	height: 100px;
+}
+
+
