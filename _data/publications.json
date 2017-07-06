@@ -12,5 +12,53 @@
 			"id" : "schlichtkrull2017modeling",
 			"type": "article"
 			}
+	},
+	{
+		"title": "Cross-Lingual Dependency Parsing with Late Decoding for Truly Low-Resource Languages",
+		"authors": ["Michael Sejr Schlichtkrull", "Anders Søgaard"],
+		"abstract": "In cross-lingual dependency annotation projection, information is often lost during  transfer because of early decoding. We present an end-to-end graph-based neural network dependency parser that can be trained to reproduce matrices of edge scores, which can be directly projected across word alignments. We show that our approach to cross-lingual dependency parsing is not only simpler, but also achieves an absolute improvement of 2.25% averaged across 10 languages compared to the previous state of the art.",
+		"link": "https://www.aclweb.org/anthology/E/E17/E17-1021.pdf",
+		"pdf": "https://www.aclweb.org/anthology/E/E17/E17-1021.pdf",
+		"venue": "EACL",
+		"year": 2017,
+		"bib": {
+			"venue": "Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics",
+			"id": "schlichtkrull2017crosslingual",
+			"type": "inproceedings",
+			"pages": "220-229",
+			"publisher": "Association for Computational Linguistics"
+			}
+	},
+	{
+		"title": "MSejrKu at SemEval-2016 Task 14: Taxonomy Enrichment by Evidence Ranking",
+		"authors": ["Michael Sejr Schlichtkrull","Héctor Martínez Alonso"],
+		"abstract": "Automatic enrichment of semantic taxonomies with novel data is a relatively unexplored task with potential benefits in a broad array of natural language processing problems. Task 14 of SemEval 2016 poses the challenge of designing systems for this task. In this paper, we describe and evaluate several machine learning systems constructed for our participation in the competition. We demonstrate an f1-score of 0.680 for our submitted systems — a small improvement over the 0.679 produced by the hard baseline.",
+		"link": "https://www.aclweb.org/anthology/S/S16/S16-1209.pdf",
+		"pdf": "https://www.aclweb.org/anthology/S/S16/S16-1209.pdf",
+		"venue": "SemEval",
+		"year": "2016",
+		"bib": {
+			"venue": "Proceedings of SemEval",
+			"id": "schlichtkrull2017taxonomy",
+			"type": "inproceedings",
+			"pages": "1337–1341",
+			"publisher": "Association for Computational Linguistics"
+			}
+	},
+	{
+		"title": "Learning affective projections for emoticons on Twitter",
+		"authors": "Michael Sejr Schlichtkrull",
+		"abstract": "Emoticons have in the literature been shown to modify rather than provide redundancy to the accompanying textual message. Despite this, emoticons are often used merely as labels for sentiment classification tasks. This paper aims to explore the phenomenon and discover more salient emoticon-emotion associations through an embedding-based machine learning process. Using principal component analysis and k-means clustering, it is shown how similar emoticons form groups in vector space. Furthermore, a supervised classification strategy for discovering emoticon-emotion associations is presented. A qualitative evaluation of the results shows that while the clustering is highly salient, the supervised approach does not perform as well.",
+		"link": "http://ieeexplore.ieee.org/abstract/document/7390651/?section=abstract",
+		"pdf": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7390651",
+		"venue": "CogInfoCom",
+		"year": "2015",
+		"bib": {
+			"venue": "Proceedings of the 6th IEEE International Conference on Cognitive Infocommunicationss",
+			"id": "schlichtkrull2017learning",
+			"type": "inproceedings",
+			"pages": "539-543",
+			"publisher": "IEEE"
+			}
 	}
 ]
