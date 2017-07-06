@@ -5,17 +5,25 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-image: url("/images/background.jpg");
+	background-image: url("/images/background2.jpg");
 	background-attachment: fixed;
 }
 
 .michael-content-box{
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 10%;
-	background-color: white;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 10%;
 	display: inline-block;
-	padding: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.michael-segment-separator{
+	width:100%;
+	height:100px;
+	float:left;
 }
 
 /*
@@ -51,6 +59,7 @@ body {
 	background-color: white;
 	text-align: center;
 	font-size: 16px;
+	height: 99px;
 }
 
 .michael-header-navigation{
@@ -98,4 +107,59 @@ body {
 	height: 100px;
 }
 
+/*
+Styling for 'about'-section:
+*/
 
+.michael-portrait-box {
+	display: inline-block;	
+	float: left;
+}
+
+.michael-greeting-box {
+	display: inline-block;
+	display: inline-block;
+	float: right;
+	width: 50%;
+	text-align: left;
+}
+
+.michael-greeting-box h2 {
+	color: white;
+	font-family: Raleway;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;font-size: 40px;
+}
+
+.michael-about-box {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	font-family: Raleway;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: white;
+}
+
+
+/*
+Styling for 'contact'-section
+*/
+.michael-social-media-link {
+	text-decoration: none;
+	color: white;
+}
+
+.michael-social-media-link i {
+	font-size: 70px;
+	text-align: center;
+}
+
+.michael-social-media-icon-box {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
