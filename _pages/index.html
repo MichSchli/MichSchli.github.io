@@ -2,31 +2,26 @@
 permalink: /
 layout: default
 lang: en
-title: About
-navigation_weight: 1
 ---
 
-<div class=michael-segment-box>
-<div class=michael-portrait-box>
-   <img src=/images/portrait-placeholder.jpg></img>
-</div>
+<section id=about class="michael-section">
+	<div class=michael-segment-separator></div>
+	<div class=michael-segment-box>
+		{% include_relative about.html %}
+	</div>
+</section>
 
-<div class=michael-greeting-box>
-   <h2 class=michael-greeting>Hi, I'm Michael!</h2>
-</div>
+<section id=publications class="michael-section">
+	<div class=michael-segment-separator></div>
+	<div class=michael-segment-box>
+		{% include_relative publications.html %}
+	</div>
+</section>
 
-<div class=michael-about-box>
-I'm a PhD candidate studying natural language processing with <a href=ivan-titov.org>Ivan Titov</a>. I am currently focusing on question answering over large data sources such as knowledge bases.
-<br /><br />
-Although formally employed by the University of Amsterdam, circumstances have conspired to have me living and working in beautiful Edinburgh.
-<br /><br />
-I am deeply interested in machine learning, artificial intelligence, and all technology that makes life easier. I also like art, literature, and good coffee.
-</div>
-</div>
-
-<div class=michael-segment-separator>
-</div>
-
-<div class=michael-segment-box>
-    {% include_relative contact.html %}
-</div>
+<section id=contact class="michael-section">
+	<div class=michael-segment-separator></div>
+	<div class=michael-segment-box>
+		{% include_relative contact.html %}
+	</div>
+	<div class=michael-segment-separator></div>
+</section>

@@ -8,12 +8,15 @@
    </div>
    <nav class=michael-header-navigation>
       <ul class=michael-header-navigation-list>
-      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-      {% for navigation_page in navigation_pages %}
-         <li class="michael-header-navigation-item{% if navigation_page.title == page.title %} michael-header-navigation-item-selected{% endif %}">
-         <a href={{navigation_page.url}}>{{navigation_page.title}}</a>
-         </li>
-      {% endfor %}
+		<li class="michael-header-navigation-item">
+			<a href=/#about>About</a>
+		</li>
+		<li class="michael-header-navigation-item">
+			<a href=/#publications>Publications</a>
+		</li>
+		<li class="michael-header-navigation-item">
+			<a href=/#contact>Contact</a>
+		</li>
       </ul>
    </nav>
 </div>

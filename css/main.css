@@ -17,25 +17,23 @@ body {
 .michael-content-box{
 	padding-left: 15%;
 	padding-right: 15%;
-	padding-top: 10%;
+	padding-top: 0px;
 	display: inline-block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	height:200%;
 }
 
 .michael-segment-separator{
 	width:100%;
-	height:100px;
+	height:320px;
 	float:left;
 }
 
-.michael-segment-box{
+.michael-section{
 	float: left;
 	width: 100%;
-	height: 50%;
 }
 
 /*
@@ -202,4 +200,14 @@ Styling for 'contact'-section
 	width: 25%;
 	float: left;
 	text-align: center;
+}
+
+/*
+Styling for 'publications' section
+*/
+
+.michael-publications-box {
+	background: white;
+	float: left;
+	width: 100%;
 }

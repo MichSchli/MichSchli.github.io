@@ -1,11 +1,6 @@
----
-permalink: /publications
-layout: default
-lang: en
-title: Publications
-navigation_weight: 3
----
 <script type="text/javascript" src=script/toggle.js></script>
+
+<div class=michael-publications-box>
 
 {% for publication in site.data.publications %}
 <div class=michael-publication-box id=publication-box-{{forloop.index}}>
@@ -51,3 +46,5 @@ navigation_weight: 3
 
 </div>
 {% endfor %}
+
+</div>
