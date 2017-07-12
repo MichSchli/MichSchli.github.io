@@ -121,21 +121,32 @@ body {
 Styling for 'about'-section:
 */
 
-.michael-portrait-box {
+.michael-about-box {
+	float: left;
+	background: white;
+	padding: 50px;
+}
+
+.michael-about-portrait-box {
 	display: inline-block;	
 	float: left;
 }
 
-.michael-greeting-box {
+.michael-about-portrait-box img {
+	border-radius: 50%;
+	height: 400px;
+}
+
+.michael-about-greeting-box {
 	display: inline-block;
 	display: inline-block;
 	float: right;
-	width: 50%;
+	width: 60%;
 	text-align: left;
 }
 
-.michael-greeting-box h2 {
-	color: white;
+.michael-about-greeting-box h2 {
+	color: black;
 	font-family: Raleway;
 	font-style: normal;
 	font-variant: normal;
@@ -143,16 +154,16 @@ Styling for 'about'-section:
 	font-size: 40px;
 }
 
-.michael-about-box {
+.michael-about-description-box {
 	display: inline-block;
 	float: right;
-	width: 50%;
+	width: 60%;
 	font-family: Raleway;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 	font-size: 20px;
-	color: white;
+	color: black;
 }
 
 
