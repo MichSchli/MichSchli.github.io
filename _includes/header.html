@@ -1,4 +1,4 @@
-<header class=michael-header>
+<header id=header class=michael-header>
 <div class=michael-header-container>
       <div class=michael-header-logo>
          <a href="/"><h1>MSS</h1></a>
@@ -7,17 +7,7 @@
       <h1>Michael Sejr Schlichtkrull</h1>
    </div>
    <nav class=michael-header-navigation>
-      <ul class=michael-header-navigation-list>
-		<li id=about-header-item class="michael-header-navigation-item">
-			<a href=/#about>About</a>
-		</li>
-		<li id=publications-header-item class="michael-header-navigation-item">
-			<a href=/#publications>Publications</a>
-		</li>
-		<li id=contact-header-item class="michael-header-navigation-item">
-			<a href=/#contact>Contact</a>
-		</li>
-      </ul>
+	{% include navbar.html name="header" %}
    </nav>
 </div>
 </header>

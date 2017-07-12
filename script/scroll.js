@@ -20,8 +20,16 @@ $("#contact").waypoint(function() {
     offset: '20%'
 });
 
+$("#hero-navbar").waypoint(function(direction) {
+	if (direction == 'down'){
+		$("#header").show();
+	} else {
+		$("#header").hide();
+	}	
+},{
+});
 
 function toggleNavbarItem(name) {
-   var navbarItemId = "#"+name+"-header-item"
+   var navbarItemId = "#header-"+name+"-scroller"
    $(navbarItemId).toggleClass("michael-header-navigation-item-selected");
 }
