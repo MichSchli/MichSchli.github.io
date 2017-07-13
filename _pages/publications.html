@@ -1,48 +1,59 @@
 <div class=michael-publications-box>
 
-{% for publication in site.data.publications %}
-<div class=michael-publication-box id=publication-box-{{forloop.index}}>
-<a class=michael-publication-title href={{publication.link}}>{{publication.title}}</a>
+{% assign sorted_publications = site.data.publications | sort:"year" | reverse  %}
+{% for publication in sorted_publications %}
+	{% if forloop.first %}
+		<div class=michael-publication-year-box>
+			<h3>{{publication.year}}</h3>
+	{% elsif last_year != publication.year %}
+		</div>
+		<div class=michael-publication-year-box>
+			<h3>{{publication.year}}</h3>
+	{% endif %}
+    	{% assign last_year = publication.year %}
 
-<div class=michael-publication-author-box>
-{% for author in publication.authors %}
+	<div class=michael-publication-box id=publication-box-{{forloop.index}}>
+		<a class=michael-publication-title href={{publication.link}}>{{publication.title}}</a>
 
-{% if forloop.last %} and {{author}}
-{% elsif forloop.length > 2 %}{{author}},
-{% else %} {{author}}
-{% endif %}
+		<div class=michael-publication-author-box>
+		{% for author in publication.authors %}
 
-{% endfor %}
-</div>
+		{% if forloop.last %} and {{author}}
+		{% elsif forloop.length > 2 %}{{author}},
+		{% else %} {{author}}
+		{% endif %}
 
-<div class=michael-publication-venue-box>
-{{publication.venue}}, {{publication.year}}
-</div>
+		{% endfor %}
+		</div>
 
-<div class=michael-publication-extra-box>
-<a class=michael-publication-extra-link onclick="hide_visibility('publication-bib-box-{{forloop.index}}');toggle_visibility('publication-abstract-box-{{forloop.index}}')" href>abstract</a>
-<a class=michael-publication-extra-link onclick="hide_visibility('publication-abstract-box-{{forloop.index}}');toggle_visibility('publication-bib-box-{{forloop.index}}')" href>bib</a>
-{% if publication.pdf %}
-<a class=michael-publication-extra-link href={{publication.pdf}}>pdf</a>
-{% endif %}
-</div>
+		<div class=michael-publication-venue-box>
+			{{publication.venue}}, {{publication.year}}
+		</div>
 
-<div class="michael-publication-abstract-box broadsem-hidden" id=publication-abstract-box-{{forloop.index}}>
-{{publication.abstract}}
-</div>
+		<div class=michael-publication-extra-box>
+			<a class=michael-publication-extra-link onclick="hide_visibility(event, 'publication-bib-box-{{forloop.index}}');toggle_visibility(event, 'publication-abstract-box-{{forloop.index}}')" href>abstract</a>
+			<a class=michael-publication-extra-link onclick="hide_visibility(event, 'publication-abstract-box-{{forloop.index}}');toggle_visibility(event, 'publication-bib-box-{{forloop.index}}')" href>bib</a>
+			{% if publication.pdf %}
+			<a class=michael-publication-extra-link href={{publication.pdf}}>pdf</a>
+			{% endif %}
+		</div>
 
-<div class="michael-publication-bib-box broadsem-hidden" id=publication-bib-box-{{forloop.index}}>
-<pre>
+		<div class="michael-publication-abstract-box michael-hidden" id=publication-abstract-box-{{forloop.index}}>
+			{{publication.abstract}}
+		</div>
+
+		<div class="michael-publication-bib-box michael-hidden" id=publication-bib-box-{{forloop.index}}>
+			<pre>
 @{{ publication.bib.type }}{% raw %}{{% endraw %}{{publication.bib.id}},
   author =	{% raw %}{{% endraw %}{% for author in publication.authors %}{% assign name_parts = author | split: " "%}{{name_parts.last}},{%for name in name_parts %}{%unless forloop.last %} {{name}}{% endunless %}{% endfor %}{% unless forloop.last %} and {% endunless %}{% endfor %}{% raw %}}{% endraw %},
   title =	{% raw %}{{% endraw %}{{publication.title}}{% raw %}}{% endraw %},
   journal =	{% raw %}{{% endraw %}{% if publication.bib.venue %}{{publication.bib.venue}}{% else %}{{publication.venue}}{% endif %}{% raw %}}{% endraw %},
   year =	{% raw %}{{% endraw %}{{publication.year}}{% raw %}}{% endraw %},
 }
-</pre>
-</div>
+			</pre>
+		</div>
 
-</div>
+	</div>
 {% endfor %}
-
+</div>
 </div>

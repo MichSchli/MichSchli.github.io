@@ -36,7 +36,7 @@
 		"link": "https://www.aclweb.org/anthology/S/S16/S16-1209.pdf",
 		"pdf": "https://www.aclweb.org/anthology/S/S16/S16-1209.pdf",
 		"venue": "SemEval",
-		"year": "2016",
+		"year": 2016,
 		"bib": {
 			"venue": "Proceedings of SemEval",
 			"id": "schlichtkrull2017taxonomy",
@@ -52,7 +52,7 @@
 		"link": "http://ieeexplore.ieee.org/abstract/document/7390651/?section=abstract",
 		"pdf": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7390651",
 		"venue": "CogInfoCom",
-		"year": "2015",
+		"year": 2015,
 		"bib": {
 			"venue": "Proceedings of the 6th IEEE International Conference on Cognitive Infocommunicationss",
 			"id": "schlichtkrull2017learning",

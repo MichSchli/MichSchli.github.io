@@ -1,24 +1,11 @@
-function toggle_visibility(id) 
+function toggle_visibility(e, id) 
 {
-    window.alert("clicked")
-    var e = document.getElementById(id);
-    var computed_style = window.getComputedStyle(e)
-    if (computed_style.display == 'block' || computed_style.display=='')
-    {
-        e.style.display = 'none';
-    }
-    else 
-    {
-        e.style.display = 'block';
-    }
+	e.preventDefault();
+	$("#"+id).toggle();
 }
 
-function hide_visibility(id)
+function hide_visibility(e, id)
 {
-    var e = document.getElementById(id);
-    var computed_style = window.getComputedStyle(e)
-    if (computed_style.display == 'block' || computed_style.display=='')
-    {
-        e.style.display = 'none';
-    }
+	e.preventDefault();
+	$("#"+id).hide();
 }

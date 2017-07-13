@@ -34,6 +34,10 @@ body {
 	width: 100%;
 }
 
+.michael-hidden{
+	display: none;
+}
+
 /*
  Styling for header:
 */
@@ -282,4 +286,17 @@ Styling for 'publications' section
 	background: white;
 	float: left;
 	width: 100%;
+	font-family: Raleway;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.michael-publication-box {
+	margin: 15px;
+}
+
+.michael-publication-bib-box{
+	font-size: 12px;
 }
