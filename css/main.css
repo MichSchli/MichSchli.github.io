@@ -43,9 +43,9 @@ body {
 */
 
 .michael-header {
+    	z-index:1;
 	position: fixed;
     	width: 100%;
-	display: none;
 	background: white;
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 }
@@ -56,8 +56,8 @@ body {
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 
 .michael-header-logo a{
@@ -74,7 +74,7 @@ body {
 	background-color: white;
 	text-align: center;
 	font-size: 16px;
-	height: 99px;
+	height: 79px;
 }
 
 .michael-header-navigation{
@@ -97,7 +97,7 @@ body {
 
 
 .michael-header-logo h1, .michael-header-name h1, .michael-header-navigation a{	
-	line-height: 90px;
+	line-height: 70px;
 	margin: 0px;
 	padding: 5px;
 	font-family: Raleway;
@@ -123,7 +123,20 @@ Styling for hero page
 
 .michael-hero-section {
 	text-align: center;
-	height: 100vh;
+}
+
+/* The hero image */
+.michael-hero-image {
+    /* The image used */
+    background-image: url("../images/hero_desktop.png");
+
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .michael-hero-portrait-box {

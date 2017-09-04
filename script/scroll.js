@@ -21,11 +21,7 @@ $("#contact").waypoint(function() {
 });
 
 $("#hero-navbar").waypoint(function(direction) {
-	if (direction == 'down'){
-		$("#header").show();
-	} else {
-		$("#header").hide();
-	}	
+   ;
 },{
 });
 
