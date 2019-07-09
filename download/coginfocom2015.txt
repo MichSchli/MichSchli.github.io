@@ -1,0 +1,8 @@
+@inproceedings{schlichtkrull2015learning,
+  title={Learning affective projections for emoticons on Twitter},
+  author={Schlichtkrull, Michael Sejr},
+  booktitle={2015 6th IEEE International Conference on Cognitive Infocommunications (CogInfoCom)},
+  pages={539--543},
+  year={2015},
+  organization={IEEE}
+}

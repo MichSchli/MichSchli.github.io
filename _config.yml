@@ -1,3 +1,46 @@
-title: BroadSem
-include:
-- _pages
+# Site/SEO settings
+email: michael.sejr@gmail.com
+permalink: /:year/:month/:day/:title/
+google_analytics: 
+
+title: Michael Sejr Schlichtkrull
+description: Personal website for Michael Schlichtkrull, PhD candidate at the University of Amsterdam.
+url: "michschli.github.io"
+baseurl: ""
+twitter_username: michael_sejr
+default_img: 
+
+# Profile settings
+name: Michael Sejr Schlichtkrull
+cv: /download/CV.pdf
+profile_img: images/about_portrait.JPG
+profile: 
+social:
+  github: https://github.com/MichSchli
+  linkedin: https://www.linkedin.com/in/michaelsejr/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - octopress-autoprefixer
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - _screenshots
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page-:num"
+
+# Sass
+sass:
+  style: compressed

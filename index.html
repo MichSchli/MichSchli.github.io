@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<section class="previews">
+  <div>
+    <figure class="absolute-bg preview__img" style="background-image: url(/images/scotland_cliff.jpg);"></figure>
+
+    <div class="previews__container">
+      <h2>{{ site.title }}</h1>
+      <span>PhD Candidate at ILLC, University of Amsterdam</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="container">
+      <button id="burger" class="open-main-nav">
+	<span class="burger"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="tabs">
+          <li class="tabs__item">About</li>
+          <li class="tabs__item">Publications</li>
+          <li class="tabs__item">Contact</li>
+          <li class="tabs__item cv_tab"><a href="{{ site.cv }}">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    {% include about-tab.html %}
+    {% include publications-tab.html %}
+    {% include contact-tab.html %}
+
+  </div>
+
+</section>

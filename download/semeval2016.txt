@@ -1,0 +1,9 @@
+@inproceedings{schlichtkrull2016taxonomy,
+  title={Msejrku at semeval-2016 task 14: Taxonomy enrichment by evidence ranking},
+  author={Schlichtkrull, Michael and Alonso, H{\'e}ctor Mart{\'\i}nez},
+  booktitle={Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016)},
+  pages={1337--1341},
+  year={2016},
+  publisher={Association for Computational Linguistics}
+}
+

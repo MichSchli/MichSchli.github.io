@@ -1,0 +1,22 @@
+<div class="tab">
+  <div class="content-box">
+    <div class="contact-info-box">
+      <h2>Want to get in touch?</h2>
+
+      michael (dot) sejr (at) gmail (dot) com
+      <br>
+      <br>
+      Office 3.50, Informatic Forum, University of Edinburgh
+      <br>
+      10 Crichton Street, Edinburgh EH8 9AB, United Kingdom
+
+      <ul class="social-list">
+        <li><a class="fa fa-graduation-cap" href="https://scholar.google.co.uk/citations?user=z8YvWyEAAAAJ&hl"></a></li>
+        {% for social in site.social %}
+          <li><a class="fa fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
+        {% endfor %}
+        <li><a class="fa fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

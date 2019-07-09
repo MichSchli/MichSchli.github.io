@@ -1,0 +1,50 @@
+<div class="tab">
+<div class="content-box">
+  {% assign sorted_publications = site.data.publications | sort:"year" | reverse  %}
+  <ul class="cards">
+  {% for publication in sorted_publications %}
+    <li class="card">
+      <div class="card__link">
+        <!--
+        <div class="card_image_box">
+          <div class="card__img">
+            <img src="images/knowledge_graph.png"></img>
+          </div>
+        </div>
+        -->
+
+        <div class=publication-info-box>
+          <h3 class="card__header">{{publication.title}}</h3>
+          <div class=michael-publication-author-box>
+	    {% for author in publication.authors %}
+
+	    {% if forloop.last and forloop.length > 1 %} and {{author}}
+	    {% elsif forloop.length > 2 %}{{author}},
+	    {% else %} {{author}}
+	    {% endif %}
+
+            {% endfor %}
+	  </div>
+
+	  <div class=michael-publication-venue-box>
+	    {{publication.venue}}, {{publication.year}}
+	  </div>
+
+          <div class="card_button_box">
+            <div class="card_button_float_container">
+            <a class="card__button__link" href="{{ publication.pdf }}"><span class="card__more">PDF</span></a>
+            <a class="card__button__link" href="{{ publication.bibtex }}"><span class="card__more">bibtex</span></a>
+
+	    {% if publication.code %}
+            <a class="card__button__link" href="{{ publication.code }}"><span class="card__more">code</span></a>
+            {% endif %}
+            </div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+</div>

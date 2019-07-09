@@ -5,13 +5,10 @@
 		"abstract" : "Knowledge bases play a crucial role in many applications, for example question answering and information retrieval. Despite the great effort invested in creating and maintaining them, even the largest representatives (e.g., Yago, DBPedia or Wikidata) are highly incomplete. We introduce relational graph convolutional networks (R-GCNs) and apply them to two standard knowledge base completion tasks: link prediction (recovery of missing facts, i.e.~subject-predicate-object triples) and entity classification (recovery of missing attributes of entities). R-GCNs are a generalization of graph convolutional networks, a recent class of neural networks operating on graphs, and are developed specifically to deal with highly multi-relational data, characteristic of realistic knowledge bases. Our methods achieve competitive performance on standard benchmarks for both tasks, demonstrating especially promising results on the challenging FB15k-237 subset of Freebase.",
 		"link": "https://arxiv.org/abs/1703.06103",
 		"pdf": "https://arxiv.org/pdf/1703.06103.pdf",
-		"venue": "ArXiv",
-		"year": 2017,
-		"bib": 	{
-			"venue" : "arXiv preprint arXiv:1703.06103",
-			"id" : "schlichtkrull2017modeling",
-			"type": "article"
-			}
+		"venue": "ESWC",
+		"year": 2018,
+                "code": "https://github.com/MichSchli/RelationPrediction",
+		"bibtex": "/download/eswc2018.txt"
 	},
 	{
 		"title": "Cross-Lingual Dependency Parsing with Late Decoding for Truly Low-Resource Languages",
@@ -21,13 +18,8 @@
 		"pdf": "https://www.aclweb.org/anthology/E/E17/E17-1021.pdf",
 		"venue": "EACL",
 		"year": 2017,
-		"bib": {
-			"venue": "Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics",
-			"id": "schlichtkrull2017crosslingual",
-			"type": "inproceedings",
-			"pages": "220-229",
-			"publisher": "Association for Computational Linguistics"
-			}
+		"code": "https://github.com/MichSchli/Tensor-LSTM",
+		"bibtex": "/download/eacl2017.txt"
 	},
 	{
 		"title": "MSejrKu at SemEval-2016 Task 14: Taxonomy Enrichment by Evidence Ranking",
@@ -37,28 +29,17 @@
 		"pdf": "https://www.aclweb.org/anthology/S/S16/S16-1209.pdf",
 		"venue": "SemEval",
 		"year": 2016,
-		"bib": {
-			"venue": "Proceedings of SemEval",
-			"id": "schlichtkrull2017taxonomy",
-			"type": "inproceedings",
-			"pages": "1337–1341",
-			"publisher": "Association for Computational Linguistics"
-			}
+		"bibtex": "/download/semeval2016.txt"
 	},
 	{
-		"title": "Learning affective projections for emoticons on Twitter",
+		"title": "Learning Affective Projections for Emoticons on Twitter",
 		"authors": "Michael Sejr Schlichtkrull",
 		"abstract": "Emoticons have in the literature been shown to modify rather than provide redundancy to the accompanying textual message. Despite this, emoticons are often used merely as labels for sentiment classification tasks. This paper aims to explore the phenomenon and discover more salient emoticon-emotion associations through an embedding-based machine learning process. Using principal component analysis and k-means clustering, it is shown how similar emoticons form groups in vector space. Furthermore, a supervised classification strategy for discovering emoticon-emotion associations is presented. A qualitative evaluation of the results shows that while the clustering is highly salient, the supervised approach does not perform as well.",
 		"link": "http://ieeexplore.ieee.org/abstract/document/7390651/?section=abstract",
 		"pdf": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7390651",
 		"venue": "CogInfoCom",
 		"year": 2015,
-		"bib": {
-			"venue": "Proceedings of the 6th IEEE International Conference on Cognitive Infocommunicationss",
-			"id": "schlichtkrull2017learning",
-			"type": "inproceedings",
-			"pages": "539-543",
-			"publisher": "IEEE"
-			}
+		"bibtex": "/download/coginfocom2015.txt"
 	}
 ]
+

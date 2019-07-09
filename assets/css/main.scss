@@ -1,0 +1,110 @@
+---
+---
+
+@import
+  'base',
+  'mixins',
+  'extends',
+  'layout',
+  'components',
+  'animations',
+  'helpers',
+  'mobile_nav'
+;
+
+/*
+Custom classes:
+*/
+
+.content-box {
+  padding: 2em 1em;
+
+  @media (min-width: $mq-md) {
+    padding: 4em 4em;
+  }
+}
+
+.contact-info-box {
+  text-align: center;
+  padding: 24vh 0 0 0;
+
+  @media (min-width: $mq-md) {
+    padding: 19% 0 0 0;
+  }
+}
+
+.social-list {
+  weight: 100%;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.social-list li {
+  display: inline-block;
+  font-size: 2.5em;
+  padding: 0.2em;
+
+  @media (min-width: $mq-md) {
+    font-size: 4em;
+    padding: 0.5em;
+  }
+}
+
+.social-list a {
+  display: inline-block;
+  font-size: 100%;
+}
+
+.about-portrait-box {
+  margin: 1em auto 3em auto;
+  display: table;
+
+  @media (min-width: $mq-md) {
+  margin: -0.8em auto 3.2em auto;
+  }
+}
+
+.about-text-box {
+  text-align: center;
+}
+
+.about-portrait-box img {
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+}
+
+.cv_tab a:hover, .cv_tab a:visited, .cv_tab a:link, .cv_tab a:active {
+  color: #fff;
+  text-decoration: none;
+
+  @media (min-width: $mq-md) {
+    color: #0a0a0a;
+  }
+}
+
+.card_button_float_container {
+  float: left;
+  padding: 1em 0em 0em 0em;
+
+  @media (min-width: $mq-md) {
+    float: right;
+    padding: 0em;
+  }
+}
+
+.card__button__link {
+  padding: 0em 0.1em 0em 0em;
+
+  @media (min-width: $mq-md) {
+    padding: 0em 0em 0em 0.3em;
+  }
+}
+
+.card__button__link:hover {
+  .card__more {
+    box-shadow: inset 175px 0 0 0 $color-alpha;
+    color: $color-white;
+  }
+}

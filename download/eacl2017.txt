@@ -1,0 +1,8 @@
+@inproceedings{schlichtkrull2017crosslingual,
+  title={Cross-Lingual Dependency Parsing with Late Decoding for Truly Low-Resource Languages},
+  author={Schlichtkrull, Michael and S{\o}gaard, Anders},
+  booktitle={Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers},
+  pages={220--229},
+  year={2017},
+  publisher={Association for Computational Linguistics}
+}
