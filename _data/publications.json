@@ -1,5 +1,34 @@
 [
 	{
+		"title": "How do Decisions Emerge across Layers in Neural Models? Interpretation with Differentiable Masking",
+		"authors": ["Nicola De Cao", "Michael Sejr Schlichtkrull", "Wilker Aziz", "Ivan Titov"],
+		"abstract": "Attribution methods assess the contribution of inputs (e.g., words) to the model prediction. One way to do so is erasure: a subset of inputs is considered irrelevant if it can be removed without affecting the model prediction. Despite its conceptual simplicity, erasure is not commonly used in practice. First, the objective is generally intractable, and approximate search or leave-one-out estimates are typically used instead; both approximations may be inaccurate and remain very expensive with modern deep (e.g., BERT-based) NLP models. Second, the method is susceptible to the hindsight bias: the fact that a token can be dropped does not mean that the model `knows' it can be dropped. The resulting pruning is over-aggressive and does not reflect how the model arrives at the prediction. To deal with these two challenges, we introduce Differentiable Masking. DiffMask relies on learning sparse stochastic gates (i.e., masks) to completely mask-out subsets of the input while maintaining end-to-end differentiability. The decision to include or disregard an input token is made with a simple linear model based on intermediate hidden layers of the analyzed model. First, this makes the approach efficient at test time because we predict rather than search. Second, as with probing classifiers, this reveals what the network `knows' at the corresponding layers. This lets us not only plot attribution heatmaps but also analyze how decisions are formed across network layers. We use DiffMask to study BERT models on sentiment classification and question answering.",
+		"link": "https://arxiv.org/abs/2004.14992",
+		"pdf": "https://arxiv.org/abs/2004.14992.pdf",
+		"venue": "ArXiv",
+		"year": 2020,
+		"code": "https://github.com/nicola-decao/diffmask",
+		"bibtex": "/download/diffmask_bibtex.txt"
+	},
+	{
+		"title": "[Anonymized]",
+		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
+		"abstract": "[Anonymized]",
+		"pdf": "",
+		"venue": "Under review at EMNLP",
+		"year": 2020,
+		"bibtex": ""
+	},
+	{
+		"title": "Evaluating for Diversity in Question Generation over Text",
+		"authors": ["Michael Sejr Schlichtkrull", "Weiwei Cheng"],
+		"abstract": "Generating diverse and relevant questions over text is a task with widespread applications. We argue that commonly-used evaluation metrics such as BLEU and METEOR are not suitable for this task due to the inherent diversity of reference questions, and propose a scheme for extending conventional metrics to reflect diversity. We furthermore propose a variational encoder-decoder model for this task. We show through automatic and human evaluation that our variational model improves diversity without loss of quality, and demonstrate how our evaluation scheme reflects this improvement.",
+		"pdf": "",
+		"venue": "ArXiv (to be released)",
+		"year": 2020,
+		"bibtex": ""
+	},
+	{
 		"title" : "Modeling Relational Data with Graph Convolutional Networks",
 		"authors": ["Michael Sejr Schlichtkrull", "Thomas N. Kipf", "Peter Bloem", "Rianne van den Berg", "Ivan Titov", "Max Welling"],
 		"abstract" : "Knowledge bases play a crucial role in many applications, for example question answering and information retrieval. Despite the great effort invested in creating and maintaining them, even the largest representatives (e.g., Yago, DBPedia or Wikidata) are highly incomplete. We introduce relational graph convolutional networks (R-GCNs) and apply them to two standard knowledge base completion tasks: link prediction (recovery of missing facts, i.e.~subject-predicate-object triples) and entity classification (recovery of missing attributes of entities). R-GCNs are a generalization of graph convolutional networks, a recent class of neural networks operating on graphs, and are developed specifically to deal with highly multi-relational data, characteristic of realistic knowledge bases. Our methods achieve competitive performance on standard benchmarks for both tasks, demonstrating especially promising results on the challenging FB15k-237 subset of Freebase.",
@@ -7,6 +36,7 @@
 		"pdf": "https://arxiv.org/pdf/1703.06103.pdf",
 		"venue": "ESWC",
 		"year": 2018,
+		"award": "Best student research paper",
                 "code": "https://github.com/MichSchli/RelationPrediction",
 		"bibtex": "/download/eswc2018.txt"
 	},
@@ -39,6 +69,7 @@
 		"pdf": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7390651",
 		"venue": "CogInfoCom",
 		"year": 2015,
+		"award":"Best paper",
 		"bibtex": "/download/coginfocom2015.txt"
 	}
 ]
