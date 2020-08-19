@@ -1,0 +1,6 @@
+@article{schlichtkrull2020evaluating,
+  title={Evaluating for Diversity in Question Generation over Text},
+  author={Schlichtkrull, Michael and Cheng, Weiwei},
+  journal={https://arxiv.org/abs/2008.07291},
+  year={2020}
+}

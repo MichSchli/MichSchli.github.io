@@ -14,19 +14,18 @@
 		"title": "[Anonymized]",
 		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
 		"abstract": "[Anonymized]",
-		"pdf": "",
 		"venue": "Under review at EMNLP",
 		"year": 2020,
-		"bibtex": ""
 	},
 	{
 		"title": "Evaluating for Diversity in Question Generation over Text",
 		"authors": ["Michael Sejr Schlichtkrull", "Weiwei Cheng"],
 		"abstract": "Generating diverse and relevant questions over text is a task with widespread applications. We argue that commonly-used evaluation metrics such as BLEU and METEOR are not suitable for this task due to the inherent diversity of reference questions, and propose a scheme for extending conventional metrics to reflect diversity. We furthermore propose a variational encoder-decoder model for this task. We show through automatic and human evaluation that our variational model improves diversity without loss of quality, and demonstrate how our evaluation scheme reflects this improvement.",
-		"pdf": "",
-		"venue": "ArXiv (to be released)",
+		"link": "https://arxiv.org/abs/2008.07291",
+		"pdf": "https://arxiv.org/abs/2008.07291.pdf",
+		"venue": "ArXiv",
 		"year": 2020,
-		"bibtex": ""
+		"bibtex": "/download/evaluating_diversity_bibtex.txt"
 	},
 	{
 		"title" : "Modeling Relational Data with Graph Convolutional Networks",
