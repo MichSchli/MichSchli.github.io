@@ -11,13 +11,6 @@
 		"bibtex": "/download/diffmask_bibtex.txt"
 	},
 	{
-		"title": "[Anonymized]",
-		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
-		"abstract": "[Anonymized]",
-		"venue": "Under review at EMNLP",
-		"year": 2020,
-	},
-	{
 		"title": "Evaluating for Diversity in Question Generation over Text",
 		"authors": ["Michael Sejr Schlichtkrull", "Weiwei Cheng"],
 		"abstract": "Generating diverse and relevant questions over text is a task with widespread applications. We argue that commonly-used evaluation metrics such as BLEU and METEOR are not suitable for this task due to the inherent diversity of reference questions, and propose a scheme for extending conventional metrics to reflect diversity. We furthermore propose a variational encoder-decoder model for this task. We show through automatic and human evaluation that our variational model improves diversity without loss of quality, and demonstrate how our evaluation scheme reflects this improvement.",
@@ -26,6 +19,16 @@
 		"venue": "ArXiv",
 		"year": 2020,
 		"bibtex": "/download/evaluating_diversity_bibtex.txt"
+	},
+	{
+		"title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge Masking",
+		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
+		"abstract": "Graph neural networks (GNNs) have become a popular approach to integrating structural inductive biases into NLP models. However, there has been little work on interpreting them, and specifically on understanding which parts of the graphs (e.g. syntactic trees or co-reference structures) contribute to a prediction. In this work, we introduce a post-hoc method for interpreting the predictions of GNNs which identifies unnecessary edges. Given a trained GNN model, we learn a simple classifier that, for every edge in every layer, predicts if that edge can be dropped. We demonstrate that such a classifier can be trained in a fully differentiable fashion, employing stochastic gates and encouraging sparsity through the expected L<sub>0</sub> norm. We use our technique as an attribution method to analyze GNN models for two tasks -- question answering and semantic role labeling -- providing insights into the information flow in these models. We show that we can drop a large proportion of edges without deteriorating the performance of the model, while we can analyse the remaining edges for interpreting model predictions.",
+		"venue": "ArXiv",
+		"year": 2020,
+		"link": "https://arxiv.org/abs/2010.00577",
+		"pdf": "https://arxiv.org/abs/2010.00577.pdf",
+		"bibtex": "/download/graphmask_bibtex.txt"
 	},
 	{
 		"title" : "Modeling Relational Data with Graph Convolutional Networks",

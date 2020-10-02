@@ -1,0 +1,6 @@
+@article{schlichtkrull2020ntepreting,
+  title={Interpreting Graph Neural Networks for NLP With Differentiable Edge Masking},
+  author={Schlichtkrull, Michael and De Cao, Nicola and Titov, Ivan},
+  journal={arXiv preprint arXiv:2010.00577},
+  year={2020}
+}
