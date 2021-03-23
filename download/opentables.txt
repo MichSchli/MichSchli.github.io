@@ -1,0 +1,6 @@
+@article{schlichtkrull2020joint,
+  title={Joint Verification and Reranking for Open Fact Checking Over Tables},
+  author={Schlichtkrull, Michael and Karpukhin, Vladimir and O{\u{g}}uz, Barlas and Lewis, Mike and Yih, Wen-tau and Riedel, Sebastian},
+  journal={arXiv preprint arXiv:2012.15115},
+  year={2020}
+}

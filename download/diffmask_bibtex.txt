@@ -1,6 +1,0 @@
-@article{de2020decisions,
-  title={How do decisions emerge across layers in neural models? interpretation with differentiable masking},
-  author={De Cao, Nicola and Schlichtkrull, Michael and Aziz, Wilker and Titov, Ivan},
-  journal={arXiv preprint arXiv:2004.14992},
-  year={2020}
-}

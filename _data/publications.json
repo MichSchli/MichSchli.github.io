@@ -1,34 +1,64 @@
 [
 	{
-		"title": "How do Decisions Emerge across Layers in Neural Models? Interpretation with Differentiable Masking",
-		"authors": ["Nicola De Cao", "Michael Sejr Schlichtkrull", "Wilker Aziz", "Ivan Titov"],
-		"abstract": "Attribution methods assess the contribution of inputs (e.g., words) to the model prediction. One way to do so is erasure: a subset of inputs is considered irrelevant if it can be removed without affecting the model prediction. Despite its conceptual simplicity, erasure is not commonly used in practice. First, the objective is generally intractable, and approximate search or leave-one-out estimates are typically used instead; both approximations may be inaccurate and remain very expensive with modern deep (e.g., BERT-based) NLP models. Second, the method is susceptible to the hindsight bias: the fact that a token can be dropped does not mean that the model `knows' it can be dropped. The resulting pruning is over-aggressive and does not reflect how the model arrives at the prediction. To deal with these two challenges, we introduce Differentiable Masking. DiffMask relies on learning sparse stochastic gates (i.e., masks) to completely mask-out subsets of the input while maintaining end-to-end differentiability. The decision to include or disregard an input token is made with a simple linear model based on intermediate hidden layers of the analyzed model. First, this makes the approach efficient at test time because we predict rather than search. Second, as with probing classifiers, this reveals what the network `knows' at the corresponding layers. This lets us not only plot attribution heatmaps but also analyze how decisions are formed across network layers. We use DiffMask to study BERT models on sentiment classification and question answering.",
-		"link": "https://arxiv.org/abs/2004.14992",
-		"pdf": "https://arxiv.org/abs/2004.14992.pdf",
+		"title": "NeurIPS 2020 EfficientQA Competition: Systems, Analyses and Lessons Learned",
+		"authors": ["Sewon Min", "Jordan Boyd-Graber", "Chris Alberti", "Danqi Chen", "Eunsol Choi", "Michael Collins", "Kelvin Guu", "Hannaneh Hajishirzi", "Kenton Lee", "Jennimaria Palomaki", "Colin Raffel", "Adam Roberts", "Tom Kwiatkowski", "Patrick Lewis", "Yuxiang Wu", "Heinrich Küttler", "Linqing Liu", "Pasquale Minervini", "Pontus Stenetorp", "Sebastian Riedel", "Sohee Yang", "Minjoon Seo", "Gautier Izacard", "Fabio Petroni", "Lucas Hosseini", "Nicola De Cao", "Edouard Grave", "Ikuya Yamada", "Sonse Shimaoka", "Masatoshi Suzuki", "Shumpei Miyawaki", "Shun Sato", "Ryo Takahashi", "Jun Suzuki", "Martin Fajcik", "Martin Docekal", "Karel Ondrej", "Pavel Smrz", "Hao Cheng", "Yelong Shen", "Xiaodong Liu", "Pengcheng He", "Weizhu Chen", "Jianfeng Gao", "Barlas Oğuz", "Xilun Chen", "Vladimir Karpukhin", "Stan Peshterliev", "Dmytro Okhonko", "Michael Sejr Schlichtkrull", "Sonal Gupta", "Yashar Mehdad", "Wen-tau Yih"],
+		"abstract": "We review the EfficientQA competition from NeurIPS 2020. The competition focused on open-domain question answering (QA), where systems take natural language questions as input and return natural language answers. The aim of the competition was to build systems that can predict correct answers while also satisfying strict on-disk memory budgets. These memory budgets were designed to encourage contestants to explore the trade-off between storing large, redundant, retrieval corpora or the parameters of large learned models. In this report, we describe the motivation and organization of the competition, review the best submissions, and analyze system predictions to inform a discussion of evaluation for open-domain QA.",
 		"venue": "ArXiv",
-		"year": 2020,
-		"code": "https://github.com/nicola-decao/diffmask",
-		"bibtex": "/download/diffmask_bibtex.txt"
+		"year": 2021,
+		"link": "https://arxiv.org/abs/2101.00133",
+		"pdf": "https://arxiv.org/pdf/2101.00133.pdf",
+		"bibtex": "/download/efficientqa.txt"
+	},
+	{
+		"title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge Masking",
+		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
+		"abstract": "Graph neural networks (GNNs) have become a popular approach to integrating structural inductive biases into NLP models. However, there has been little work on interpreting them, and specifically on understanding which parts of the graphs (e.g. syntactic trees or co-reference structures) contribute to a prediction. In this work, we introduce a post-hoc method for interpreting the predictions of GNNs which identifies unnecessary edges. Given a trained GNN model, we learn a simple classifier that, for every edge in every layer, predicts if that edge can be dropped. We demonstrate that such a classifier can be trained in a fully differentiable fashion, employing stochastic gates and encouraging sparsity through the expected L<sub>0</sub> norm. We use our technique as an attribution method to analyze GNN models for two tasks -- question answering and semantic role labeling -- providing insights into the information flow in these models. We show that we can drop a large proportion of edges without deteriorating the performance of the model, while we can analyse the remaining edges for interpreting model predictions.",
+		"venue": "ICLR",
+		"year": 2021,
+		"link": "https://openreview.net/forum?id=WznmQa42ZAx",
+		"pdf": "https://openreview.net/pdf?id=WznmQa42ZAx",
+		"bibtex": "/download/graphmask_bibtex.txt"
 	},
 	{
 		"title": "Evaluating for Diversity in Question Generation over Text",
 		"authors": ["Michael Sejr Schlichtkrull", "Weiwei Cheng"],
 		"abstract": "Generating diverse and relevant questions over text is a task with widespread applications. We argue that commonly-used evaluation metrics such as BLEU and METEOR are not suitable for this task due to the inherent diversity of reference questions, and propose a scheme for extending conventional metrics to reflect diversity. We furthermore propose a variational encoder-decoder model for this task. We show through automatic and human evaluation that our variational model improves diversity without loss of quality, and demonstrate how our evaluation scheme reflects this improvement.",
 		"link": "https://arxiv.org/abs/2008.07291",
-		"pdf": "https://arxiv.org/abs/2008.07291.pdf",
+		"pdf": "https://arxiv.org/pdf/2008.07291.pdf",
 		"venue": "ArXiv",
 		"year": 2020,
 		"bibtex": "/download/evaluating_diversity_bibtex.txt"
 	},
 	{
-		"title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge Masking",
-		"authors": ["Michael Sejr Schlichtkrull", "Nicola De Cao", "Ivan Titov"],
-		"abstract": "Graph neural networks (GNNs) have become a popular approach to integrating structural inductive biases into NLP models. However, there has been little work on interpreting them, and specifically on understanding which parts of the graphs (e.g. syntactic trees or co-reference structures) contribute to a prediction. In this work, we introduce a post-hoc method for interpreting the predictions of GNNs which identifies unnecessary edges. Given a trained GNN model, we learn a simple classifier that, for every edge in every layer, predicts if that edge can be dropped. We demonstrate that such a classifier can be trained in a fully differentiable fashion, employing stochastic gates and encouraging sparsity through the expected L<sub>0</sub> norm. We use our technique as an attribution method to analyze GNN models for two tasks -- question answering and semantic role labeling -- providing insights into the information flow in these models. We show that we can drop a large proportion of edges without deteriorating the performance of the model, while we can analyse the remaining edges for interpreting model predictions.",
+		"title": "How do Decisions Emerge across Layers in Neural Models? Interpretation with Differentiable Masking",
+		"authors": ["Nicola De Cao", "Michael Sejr Schlichtkrull", "Wilker Aziz", "Ivan Titov"],
+		"abstract": "Attribution methods assess the contribution of inputs (e.g., words) to the model prediction. One way to do so is erasure: a subset of inputs is considered irrelevant if it can be removed without affecting the model prediction. Despite its conceptual simplicity, erasure is not commonly used in practice. First, the objective is generally intractable, and approximate search or leave-one-out estimates are typically used instead; both approximations may be inaccurate and remain very expensive with modern deep (e.g., BERT-based) NLP models. Second, the method is susceptible to the hindsight bias: the fact that a token can be dropped does not mean that the model `knows' it can be dropped. The resulting pruning is over-aggressive and does not reflect how the model arrives at the prediction. To deal with these two challenges, we introduce Differentiable Masking. DiffMask relies on learning sparse stochastic gates (i.e., masks) to completely mask-out subsets of the input while maintaining end-to-end differentiability. The decision to include or disregard an input token is made with a simple linear model based on intermediate hidden layers of the analyzed model. First, this makes the approach efficient at test time because we predict rather than search. Second, as with probing classifiers, this reveals what the network `knows' at the corresponding layers. This lets us not only plot attribution heatmaps but also analyze how decisions are formed across network layers. We use DiffMask to study BERT models on sentiment classification and question answering.",
+		"link": "https://www.aclweb.org/anthology/2020.emnlp-main.262/",
+		"pdf": "https://www.aclweb.org/anthology/2020.emnlp-main.262.pdf",
+		"venue": "EMNLP",
+		"year": 2020,
+		"code": "https://github.com/nicola-decao/diffmask",
+		"bibtex": "https://www.aclweb.org/anthology/2020.emnlp-main.262.bib"
+	},
+	{
+		"title": "Unified Open-Domain Question Answering with Structured and Unstructured Knowledge",
+		"authors": ["Barlas Oguz", "Xilun Chen", "Vladimir Karpukhin", "Stan Peshterliev", "Dmytro Okhonko", "Michael Sejr Schlichtkrull", "Sonal Gupta", "Yashar Mehdad", "Scott Yih"],
+		"abstract": "We study open-domain question answering (ODQA) with structured, unstructured and semi-structured knowledge sources, including text, tables, lists, and knowledge bases. Our approach homogenizes all sources by reducing them to text, and applies recent, powerful retriever-reader models which have so far been limited to text sources only. We show that knowledge-base QA can be greatly improved when reformulated in this way. Contrary to previous work, we find that combining sources always helps, even for datasets which target a single source by construction. As a result, our unified model produces state-of-the-art results on 3 popular ODQA benchmarks.",
 		"venue": "ArXiv",
 		"year": 2020,
-		"link": "https://arxiv.org/abs/2010.00577",
-		"pdf": "https://arxiv.org/abs/2010.00577.pdf",
-		"bibtex": "/download/graphmask_bibtex.txt"
+		"link": "https://arxiv.org/abs/2012.14610",
+		"pdf": "https://arxiv.org/pdf/2012.14610.pdf",
+		"bibtex": "/download/unifiedqa.txt"
+	},
+	{
+		"title": "Joint Verification and Reranking for Open Fact Checking Over Tables",
+		"authors": ["Michael Sejr Schlichtkrull", "Vladimir Karpukhin", "Barlas Oğuz", "Mike Lewis", "Wen-tau Yih", "Sebastian Riedel"],
+		"abstract": "Structured information is an important knowledge source for automatic verification of factual claims. Nevertheless, the majority of existing research into this task has focused on textual data, and the few recent inquiries into structured data have been for the closed-domain setting where appropriate evidence for each claim is assumed to have already been retrieved. In this paper, we investigate verification over structured data in the open-domain setting, introducing a joint reranking-and-verification model which fuses evidence documents in the verification component. Our open-domain model achieves performance comparable to the closed-domain state-of-the-art on the TabFact dataset, and demonstrates performance gains from the inclusion of multiple tables as well as a significant improvement over a heuristic retrieval baseline.",
+		"venue": "ArXiv",
+		"year": 2020,
+		"link": "https://arxiv.org/abs/2012.15115",
+		"pdf": "https://arxiv.org/pdf/2012.15115.pdf",
+		"bibtex": "/download/opentables.txt"
 	},
 	{
 		"title" : "Modeling Relational Data with Graph Convolutional Networks",

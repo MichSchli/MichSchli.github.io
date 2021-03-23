@@ -1,0 +1,6 @@
+@article{oguz2020unified,
+  title={Unified Open-Domain Question Answering with Structured and Unstructured Knowledge},
+  author={O{\u{g}}uz, Barlas and Chen, Xilun and Karpukhin, Vladimir and Peshterliev, Stan and Okhonko, Dmytro and Schlichtkrull, Michael and Gupta, Sonal and Mehdad, Yashar and Yih, Scott},
+  journal={arXiv preprint arXiv:2012.14610},
+  year={2020}
+}
