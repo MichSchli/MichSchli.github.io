@@ -39,6 +39,10 @@
           <div class="card_button_box">
             <div class="card_button_float_container">
 
+            {% if publication.link %}
+            <a class="card__button__link" href="{{ publication.link }}"><span class="card__more">link</span></a>
+            {% endif %}
+
 	    {% if publication.pdf %}
             <a class="card__button__link" href="{{ publication.pdf }}"><span class="card__more">PDF</span></a>
 	    {% endif %}
