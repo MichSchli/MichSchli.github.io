@@ -17,7 +17,9 @@
 		"year": 2021,
 		"link": "https://openreview.net/forum?id=WznmQa42ZAx",
 		"pdf": "https://openreview.net/pdf?id=WznmQa42ZAx",
-		"bibtex": "/download/graphmask_bibtex.txt"
+		"bibtex": "/download/graphmask_bibtex.txt",
+		"poster": "/download/GraphMask_poster.pdf",
+		"code": "https://github.com/MichSchli/GraphMask"
 	},
 	{
 		"title": "Evaluating for Diversity in Question Generation over Text",

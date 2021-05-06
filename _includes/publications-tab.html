@@ -47,6 +47,10 @@
             <a class="card__button__link" href="{{ publication.pdf }}"><span class="card__more">PDF</span></a>
 	    {% endif %}
 
+	    {% if publication.poster %}
+            <a class="card__button__link" href="{{ publication.poster }}"><span class="card__more">poster</span></a>
+            {% endif %}
+
 	    {% if publication.bibtex %}
             <a class="card__button__link" href="{{ publication.bibtex }}"><span class="card__more">bibtex</span></a>
 	    {% endif %}
