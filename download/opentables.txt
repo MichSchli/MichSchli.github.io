@@ -1,6 +1,18 @@
-@article{schlichtkrull2020joint,
-  title={Joint Verification and Reranking for Open Fact Checking Over Tables},
-  author={Schlichtkrull, Michael and Karpukhin, Vladimir and O{\u{g}}uz, Barlas and Lewis, Mike and Yih, Wen-tau and Riedel, Sebastian},
-  journal={arXiv preprint arXiv:2012.15115},
-  year={2020}
+@inproceedings{schlichtkrull-etal-2021-joint,
+    title = "Joint Verification and Reranking for Open Fact Checking Over Tables",
+    author = "Schlichtkrull, Michael Sejr  and
+      Karpukhin, Vladimir  and
+      Oguz, Barlas  and
+      Lewis, Mike  and
+      Yih, Wen-tau  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.529",
+    doi = "10.18653/v1/2021.acl-long.529",
+    pages = "6787--6799",
+    abstract = "Structured information is an important knowledge source for automatic verification of factual claims. Nevertheless, the majority of existing research into this task has focused on textual data, and the few recent inquiries into structured data have been for the closed-domain setting where appropriate evidence for each claim is assumed to have already been retrieved. In this paper, we investigate verification over structured data in the open-domain setting, introducing a joint reranking-and-verification model which fuses evidence documents in the verification component. Our open-domain model achieves performance comparable to the closed-domain state-of-the-art on the TabFact dataset, and demonstrates performance gains from the inclusion of multiple tables as well as a significant improvement over a heuristic retrieval baseline.",
 }

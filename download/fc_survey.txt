@@ -1,0 +1,6 @@
+@article{guo2021survey,
+  title={A survey on automated fact-checking},
+  author={Guo, Zhijiang and Schlichtkrull, Michael and Vlachos, Andreas},
+  journal={arXiv preprint arXiv:2108.11896},
+  year={2021}
+}
