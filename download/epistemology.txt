@@ -1,0 +1,8 @@
+@article{schlichtkrull2023intended,
+      title={The Intended Uses of Automated Fact-Checking Artefacts: Why, How and Who}, 
+      author={Michael Schlichtkrull and Nedjma Ousidhoum and Andreas Vlachos},
+      year={2023},
+      eprint={2304.14238},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
