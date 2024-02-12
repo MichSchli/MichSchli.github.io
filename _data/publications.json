@@ -9,7 +9,7 @@
 		"pdf": "https://openreview.net/pdf?id=fKzSz0oyaI",
 		"bibtex": "/download/averitec.txt",
 		"poster": "/download/AVeriTeC_poster.pdf",
-		"code": "https://github.com/MichSchli/AVeriTeCs"
+		"code": "https://github.com/MichSchli/AVeriTeC"
 	},
 	{
 		"title": "Are Embedded Potatoes Still Vegetables? On the Limitations of WordNet Embeddings for Lexical Semantics",
