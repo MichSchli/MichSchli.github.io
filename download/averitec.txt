@@ -1,0 +1,8 @@
+@inproceedings{
+schlichtkrull2023averitec,
+title={{AV}eri{T}e{C}: A Dataset for Real-world Claim Verification with Evidence from the Web},
+author={Michael Sejr Schlichtkrull and Zhijiang Guo and Andreas Vlachos},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+year={2023},
+url={https://openreview.net/forum?id=fKzSz0oyaI}
+}
