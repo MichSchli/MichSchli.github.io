@@ -108,3 +108,9 @@ Custom classes:
     color: $color-white;
   }
 }
+
+.transparent-text {
+            font-size: 1px;
+            color: rgba(0, 0, 0, 0); /* This makes the text transparent */
+            pointer-events: none; /* This makes the text non-interactive */
+        }
