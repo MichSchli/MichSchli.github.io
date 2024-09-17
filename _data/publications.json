@@ -1,16 +1,5 @@
 [	
 	{
-		"title": "Generating Media Background Checks for Automated Source Critical Reasoning",
-		"authors": ["Michael Sejr Schlichtkrull"],
-		"abstract": "Not everything on the internet is true. This unfortunate fact requires both humans and models to perform complex reasoning about credibility when working with retrieved information. In NLP, this problem has seen little attention. Indeed, retrieval-augmented models are not typically expected to distrust retrieved documents. Human experts overcome the challenge by gathering signals about the context, reliability, and tendency of source documents - that is, they perform source criticism. We propose a novel NLP task focused on finding and summarising such signals. We introduce a new dataset of 6,709 \"media background checks\" derived from Media Bias / Fact Check, a volunteer-run website documenting media bias. We test open-source and closed-source LLM baselines with and without retrieval on this dataset, finding that retrieval greatly improves performance. We furthermore carry out human evaluation, demonstrating that 1) media background checks are helpful for humans, and 2) media background checks are helpful for retrieval-augmented models.",
-		"venue": "ArXiv",
-		"year": 2024,
-		"link": "https://arxiv.org/abs/2409.00781",
-		"pdf": "https://arxiv.org/pdf/2409.00781",
-		"bibtex": "/download/mbc.txt",
-		"code": "https://github.com/MichSchli/MediaBackgroundChecks"
-	},
-	{
 		"title": "Document-level Claim Extraction and Decontextualisation for Fact-Checking",
 		"authors": ["Zhenyun Deng", "Michael Sejr Schlichtkrull", "Andreas Vlachos"],
 		"abstract": "Selecting which claims to check is a time-consuming task for human fact-checkers, especially from documents consisting of multiple sentences and containing multiple claims. However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, e.g., identifying whether a sentence contains a claim or the exact boundaries of the claim within a sentence. In this paper, we propose a method for document-level claim extraction for fact-checking, which aims to extract check-worthy claims from documents and decontextualise them so that they can be understood out of context. Specifically, we first recast claim extraction as extractive summarization in order to identify central sentences from documents, then rewrite them to include necessary context from the originating document through sentence decontextualisation. Evaluation with both automatic metrics and a fact-checking professional shows that our method is able to extract check-worthy claims from documents at a higher rate than previous work, while also improving evidence retrieval.",
@@ -31,6 +20,17 @@
 		"pdf": "https://aclanthology.org/2024.findings-acl.580.pdf",
 		"bibtex": "https://aclanthology.org/2024.findings-acl.580.bib",
 		"code": "https://github.com/ericchamoun/FocusedFeedbackGeneration"
+	},
+	{
+		"title": "Generating Media Background Checks for Automated Source Critical Reasoning",
+		"authors": ["Michael Sejr Schlichtkrull"],
+		"abstract": "Not everything on the internet is true. This unfortunate fact requires both humans and models to perform complex reasoning about credibility when working with retrieved information. In NLP, this problem has seen little attention. Indeed, retrieval-augmented models are not typically expected to distrust retrieved documents. Human experts overcome the challenge by gathering signals about the context, reliability, and tendency of source documents - that is, they perform source criticism. We propose a novel NLP task focused on finding and summarising such signals. We introduce a new dataset of 6,709 \"media background checks\" derived from Media Bias / Fact Check, a volunteer-run website documenting media bias. We test open-source and closed-source LLM baselines with and without retrieval on this dataset, finding that retrieval greatly improves performance. We furthermore carry out human evaluation, demonstrating that 1) media background checks are helpful for humans, and 2) media background checks are helpful for retrieval-augmented models.",
+		"venue": "ArXiv",
+		"year": 2024,
+		"link": "https://arxiv.org/abs/2409.00781",
+		"pdf": "https://arxiv.org/pdf/2409.00781",
+		"bibtex": "/download/mbc.txt",
+		"code": "https://github.com/MichSchli/MediaBackgroundChecks"
 	},
 	{
 		"title": "AVeriTeC: A Dataset for Real-world Claim Verification with Evidence from the Web",
