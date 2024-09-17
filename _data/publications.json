@@ -1,5 +1,38 @@
 [	
 	{
+		"title": "Generating Media Background Checks for Automated Source Critical Reasoning",
+		"authors": ["Michael Sejr Schlichtkrull"],
+		"abstract": "Not everything on the internet is true. This unfortunate fact requires both humans and models to perform complex reasoning about credibility when working with retrieved information. In NLP, this problem has seen little attention. Indeed, retrieval-augmented models are not typically expected to distrust retrieved documents. Human experts overcome the challenge by gathering signals about the context, reliability, and tendency of source documents - that is, they perform source criticism. We propose a novel NLP task focused on finding and summarising such signals. We introduce a new dataset of 6,709 "media background checks" derived from Media Bias / Fact Check, a volunteer-run website documenting media bias. We test open-source and closed-source LLM baselines with and without retrieval on this dataset, finding that retrieval greatly improves performance. We furthermore carry out human evaluation, demonstrating that 1) media background checks are helpful for humans, and 2) media background checks are helpful for retrieval-augmented models.",
+		"venue": "ArXiv",
+		"year": 2024,
+		"link": "https://arxiv.org/abs/2409.00781",
+		"pdf": "https://arxiv.org/pdf/2409.00781",
+		"bibtex": "/download/mbc.txt",
+		"code": "https://github.com/MichSchli/MediaBackgroundChecks"
+	},
+	{
+		"title": "Document-level Claim Extraction and Decontextualisation for Fact-Checking",
+		"authors": ["Zhenyun Deng", "Michael Sejr Schlichtkrull", "Andreas Vlachos"],
+		"abstract": "Selecting which claims to check is a time-consuming task for human fact-checkers, especially from documents consisting of multiple sentences and containing multiple claims. However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, e.g., identifying whether a sentence contains a claim or the exact boundaries of the claim within a sentence. In this paper, we propose a method for document-level claim extraction for fact-checking, which aims to extract check-worthy claims from documents and decontextualise them so that they can be understood out of context. Specifically, we first recast claim extraction as extractive summarization in order to identify central sentences from documents, then rewrite them to include necessary context from the originating document through sentence decontextualisation. Evaluation with both automatic metrics and a fact-checking professional shows that our method is able to extract check-worthy claims from documents at a higher rate than previous work, while also improving evidence retrieval.",
+		"venue": "ACL",
+		"year": 2024,
+		"link": "https://aclanthology.org/2024.acl-long.645/",
+		"pdf": "https://aclanthology.org/2024.acl-long.645.pdf",
+		"bibtex": "https://aclanthology.org/2024.acl-long.645.bib",
+		"code": "https://github.com/Tswings/AVeriTeC-DCE"
+	},
+	{
+		"title": "Automated Focused Feedback Generation for Scientific Writing Assistance",
+		"authors": ["Eric Chamoun", "Michael Sejr Schlichtkrull", "Andreas Vlachos"],
+		"abstract": "Scientific writing is a challenging task, particularly for novice researchers who often rely on feedback from experienced peers. Recent work has primarily focused on improving surface form and style rather than manuscript content. In this paper, we propose a novel task: automated focused feedback generation for scientific writing assistance. We present SWIF2T: a Scientific WrIting Focused Feedback Tool. It is designed to generate specific, actionable and coherent comments, which identify weaknesses in a scientific paper and/or propose revisions to it. Our approach consists of four components - planner, investigator, reviewer and controller - leveraging multiple Large Language Models (LLMs) to implement them. We compile a dataset of 300 peer reviews citing weaknesses in scientific papers and conduct human evaluation. The results demonstrate the superiority in specificity, reading comprehension, and overall helpfulness of SWIF2T’s feedback compared to other approaches. In our analysis, we also identified cases where automatically generated reviews were judged better than human ones, suggesting opportunities for integration of AI-generated feedback in scientific writing.",
+		"venue": "Findings of ACL",
+		"year": 2024,
+		"link": "https://aclanthology.org/2024.findings-acl.580/",
+		"pdf": "https://aclanthology.org/2024.findings-acl.580.pdf",
+		"bibtex": "https://aclanthology.org/2024.findings-acl.580.bib",
+		"code": "https://github.com/ericchamoun/FocusedFeedbackGeneration"
+	},
+	{
 		"title": "AVeriTeC: A Dataset for Real-world Claim Verification with Evidence from the Web",
 		"authors": ["Michael Sejr Schlichtkrull", "Zhijiang Guo", "Andreas Vlachos"],
 		"abstract": "Existing datasets for automated fact-checking have substantial limitations, such as relying on artificial claims, lacking annotations for evidence and intermediate reasoning, or including evidence published after the claim. In this paper we introduce AVeriTeC, a new dataset of 4,568 real-world claims covering fact-checks by 50 different organizations. Each claim is annotated with question-answer pairs supported by evidence available online, as well as textual justifications explaining how the evidence combines to produce a verdict. Through a multi-round annotation process, we avoid common pitfalls including context dependence, evidence insufficiency, and temporal leakage, and reach a substantial inter-annotator agreement of kappa = 0.619 on verdicts. We develop a baseline as well as an evaluation scheme for verifying claims through question-answering against the open web.",
