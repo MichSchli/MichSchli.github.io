@@ -30,7 +30,8 @@
 		"link": "https://arxiv.org/abs/2409.00781",
 		"pdf": "https://arxiv.org/pdf/2409.00781",
 		"bibtex": "/download/mbc.txt",
-		"code": "https://github.com/MichSchli/MediaBackgroundChecks"
+		"code": "https://github.com/MichSchli/MediaBackgroundChecks",
+		"poster": "/download/MBC_Poster.pdf"
 	},
 	{
 		"title": "AVeriTeC: A Dataset for Real-world Claim Verification with Evidence from the Web",
